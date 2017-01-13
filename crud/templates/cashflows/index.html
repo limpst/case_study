@@ -1,0 +1,35 @@
+{% if object_list %} 
+    <h1>Cashflows CRUD</h1>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Deal Name</th>
+            <th>Value_Date</th>
+            <th>CF_Type</th>
+            <th>Cashflows</th>
+            
+            <th colspan="2">Actions</th>
+        </tr>
+    {% for cashflow in object_list %}
+        <tr>
+            <td>{{ cashflow.id }}</td>
+            <td>{{ cashflow.did }}</td>
+            <td>{{ cashflow.valuedate }}</td>
+            <td>{{ cashflow.cftype }}</td>
+            <td>{{ cashflow.cashflows }}</td>
+            
+            <td><a href="{% url "cashflow_edit" cashflow.id %}">Edit</a></td>
+            <td><a href="{% url "cashflow_delete" cashflow.id %}">Delete</a></td>
+        </tr>
+    {% endfor %}
+        
+    </table>
+
+{% else %} 
+
+    <p>No data</p>
+
+{% endif  %} 
+
+<a href="{% url "cashflow_new" %}">New</a>
+

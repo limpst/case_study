@@ -1,0 +1,31 @@
+{% if object_list %} 
+    <h1>Deal CRUD</h1>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Currency</th>
+            <th>Fund</th>
+            
+            <th colspan="2">Actions</th>
+        </tr>
+    {% for deal in object_list %}
+        <tr>
+            <td>{{ deal.name }}</td>
+            <td>{{ deal.currency }}</td>
+            <td>{{ deal.fund }}</td>
+            
+            <td><a href="{% url "deal_edit" deal.id %}">Edit</a></td>
+            <td><a href="{% url "deal_delete" deal.id %}">Delete</a></td>
+        </tr>
+    {% endfor %}
+        
+    </table>
+
+{% else %} 
+
+    <p>No data</p>
+
+{% endif  %} 
+
+<a href="{% url "deal_new" %}">New</a>
+
