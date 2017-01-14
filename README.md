@@ -8,7 +8,7 @@
 
 ________________________________________________________________________________________________________________________________________
 
-## You can also file course from github repository: https://github.com/limpst/case_study. 
+## You can also file course from cloud9 repository: https://ide.c9.io/limpst/case-study. 
 
 ## You need to execute bash command 'mysql-ctl cli' before 'Run Project' to start mysql. 
 
