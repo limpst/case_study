@@ -6,6 +6,19 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
+________________________________________________________________________________________________________________________________________
+
+## You can also file course from github repository: https://github.com/limpst/case_study. 
+
+## You need to execute bash command 'mysql-ctl cli' before 'Run Project' to start mysql. 
+
+## Please uncomment below at '/case-study/crud/urls.py'  to see deal CRUD UI, and commend all the others in section '##cashflow CRUD'. 
+    url(r'^$', views.deal_list, name='deal_list'),
+    url(r'^new$', views.deal_create, name='deal_new'),
+    url(r'^edit/(?P<pk>\d+)$', views.deal_update, name='deal_edit'),
+    url(r'^delete/(?P<pk>\d+)$', views.deal_delete, name='deal_delete'),
+
+________________________________________________________________________________________________________________________________________
 
 Welcome to your Django project on Cloud9 IDE!
 
