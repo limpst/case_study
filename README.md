@@ -8,7 +8,7 @@
 
 ________________________________________________________________________________________________________________________________________
 
-## You can also file course from cloud9 repository: https://ide.c9.io/limpst/case-study. 
+## Please find code at cloud9 repository: https://ide.c9.io/limpst/case-study. 
 
 ## You need to execute bash command 'mysql-ctl cli' (start mysql) before starting web app. with 'Run Project' button.
 
