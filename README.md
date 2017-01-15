@@ -10,7 +10,7 @@ ________________________________________________________________________________
 
 ## Please find code at cloud9 repository: https://ide.c9.io/limpst/case-study. 
 
-## You need to execute bash command 'mysql-ctl cli' (start mysql) before starting web app. with 'Run Project' button.
+## You need to run bash command 'mysql-ctl cli' (in order to start mysql) before running web application with 'Run Project' button.
 
 ________________________________________________________________________________________________________________________________________
 
