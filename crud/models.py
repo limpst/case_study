@@ -23,8 +23,8 @@ class Cashflows(models.Model):
         (u'Equity','Equity'), 
         (u'Proceeds', 'Proceeds'), 
         ) 
-        
-    did = models.ForeignKey('Deal')
-    valuedate = models.DateField() 
-    cftype = models.CharField(max_length=200, choices = CF_CHOICES) 
+            
+    did = models.ForeignKey('Deal', verbose_name="Deal_Name")
+    valuedate = models.DateField("Value_Date") 
+    cftype = models.CharField("CF_Type", max_length=200, choices = CF_CHOICES) 
     cashflows = models.IntegerField()
