@@ -8,7 +8,7 @@
 
 ________________________________________________________________________________________________________________________________________
 
-## Please find code at cloud9 repository: https://ide.c9.io/limpst/case-study. 
+## Please find cloud9 repository at: https://ide.c9.io/limpst/case-study. 
 
 ## You need to run bash command 'mysql-ctl start' (in order to start mysql) before running web application with 'Run Project' button.
 
